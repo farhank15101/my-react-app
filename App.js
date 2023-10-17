@@ -7,7 +7,7 @@ function App() {
 
   const handleGetRequest = () => {
     axios
-      .get('http://localhost:8080/')
+      .get('http://localhost:8080')
       .then((response) => {
         setResult(JSON.stringify(response.data, null, 2));
       })
