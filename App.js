@@ -7,6 +7,7 @@ function App() {
   const [result, setResult] = useState('');
 
   const handleGetRequest = () => {
+    setResult('');
     for (let i = 0; i < numQueries; i++) {
       axios
         .get('http://localhost:8080/')
@@ -20,6 +21,7 @@ function App() {
   };
 
   const handlePostRequest = () => {
+    setResult('');
     for (let i = 0; i < numQueries; i++) {
       axios
         .post(
