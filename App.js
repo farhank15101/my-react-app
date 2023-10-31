@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function App() {
   const [heads, setHeads] = useState(6);
-  const [numQueries, setNumQueries] = useState(1); // New state for the number of queries
+  const [numQueries, setNumQueries] = useState(1);
   const [result, setResult] = useState('');
 
   const handleGetRequest = () => {
